@@ -78,7 +78,7 @@ The noise you hear is three kinds added together:
 Buses are not counted by the Master. A Bus adds only its own hiss.
 
 The more Channels you already have, the less each new one adds.
-Going from 1 to 2 Channels adds 3 dB. Going from 32 to 64 also adds only 3 dB.
+Doubling the Channels adds 3 dB to their noise, whether you go from 1 to 2 or from 32 to 64.
 
 #### How loud it gets
 
@@ -102,7 +102,7 @@ A summing bus sounds different from a channel. So the Bus role is not just loude
 1. It is warmer and darker: more pink, less top.
 2. Part of its noise is the same on left and right, like the shared electronics of a bus. The rest stays separate, so the image stays wide.
 3. It breathes a tiny bit with the music: when the bus gets busy, its noise rises by up to 0.5 dB, over about one second. It never pumps.
-4. A 9th Bus shows `BUS FULL` and stays silent. To retry, select Channel, then Bus again.
+4. A 9th Bus shows `FULL BUS` in the mixer and stays silent. To retry, select Channel, then Bus again.
 
 ### Smooth changes
 
@@ -193,6 +193,11 @@ To turn it on:
 
 *A Bus and a Channel in the mixer.*<br>
 ![CNF Bus and Channel in the mixer](assets/screenshots/cnf-mixer-bus-channel.png)
+
+<br>
+
+*A 9th Bus in the mixer, with no free slot.*<br>
+![CNF Bus showing FULL BUS in the mixer](assets/screenshots/cnf-mixer-full-bus.png)
 
 <br>
 
