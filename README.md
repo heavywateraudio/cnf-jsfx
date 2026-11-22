@@ -9,13 +9,15 @@ CNF puts that noise floor back into your mix.
 It is very quiet: felt, not heard.
 It grows the way a real console does: the more tracks you use, the higher the floor.
 
+*CNF on the master track, in the Master role, with the noise on.*<br>
 ![CNF Master](assets/screenshots/cnf-master.png)
 
-*CNF on the master track, in the Master role, with the noise on.*
+<br>
 
+*The same CNF with the noise off.*<br>
 ![CNF Master with the noise off](assets/screenshots/cnf-master-off.png)
 
-*The same CNF with the noise off.*
+<br>
 
 ## How it works
 
@@ -140,14 +142,15 @@ Raise the boost to hear what the noise adds, or when you want a louder noise lay
 
 ### Channel and Bus
 
+*A Channel: only the role buttons. It follows the Master.*<br>
 ![CNF Channel](assets/screenshots/cnf-channel.png)
 
-*A Channel: only the role buttons. It follows the Master.*
+<br>
 
-
+*A Bus.*<br>
 ![CNF Bus](assets/screenshots/cnf-bus.png)
 
-*A Bus.*
+<br>
 
 Channel and Bus show only the role buttons.
 Their noise, On/Off and boost come from the Master.
@@ -178,17 +181,20 @@ To turn it on:
 1. Right-click CNF in the track's FX inserts.
 2. Click **Show embedded UI in MCP**, or **Show embedded UI in TCP**.
 
+*The FX insert menu in REAPER.*<br>
 ![FX insert menu](assets/screenshots/cnf-embedded-ui-menu.png)
 
-*The FX insert menu in REAPER.*
+<br>
+
+*The Master in the mixer.*<br>
 ![CNF Master in the mixer](assets/screenshots/cnf-mixer-master.png)
 
+<br>
 
-*The Master in the mixer.*
-
+*A Bus and a Channel in the mixer.*<br>
 ![CNF Bus and Channel in the mixer](assets/screenshots/cnf-mixer-bus-channel.png)
 
-*A Bus and a Channel in the mixer.*
+<br>
 
 1. Channel shows `CHNL`. Bus shows `BUS <n>`, or `FULL BUS` when no slot is free.
 2. The Master shows `NOISE ON` or `NOISE OFF` and the boost in dB.
