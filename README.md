@@ -11,7 +11,11 @@ It grows the way a real console does: the more tracks you use, the higher the fl
 
 ![CNF Master](assets/screenshots/cnf-master.png)
 
-*CNF on the master track, in the Master role.*
+*CNF on the master track, in the Master role, with the noise on.*
+
+![CNF Master with the noise off](assets/screenshots/cnf-master-off.png)
+
+*The same CNF with the noise off.*
 
 ## How it works
 
@@ -177,8 +181,8 @@ To turn it on:
 ![FX insert menu](assets/screenshots/cnf-embedded-ui-menu.png)
 
 *The FX insert menu in REAPER.*
-
 ![CNF Master in the mixer](assets/screenshots/cnf-mixer-master.png)
+
 
 *The Master in the mixer.*
 
@@ -219,7 +223,7 @@ THS Master Summer throws away channels 1 and 2 and replaces them with the sum of
 
 ## Download
 
-**[Download CNF_Facelift.jsfx](https://github.com/heavywateraudio/cnf-jsfx/releases/download/cnf-facelift-v1.0/CNF_Facelift.jsfx)**
+**[Download CNF_Facelift.jsfx](https://github.com/heavywateraudio/cnf-jsfx/releases/download/cnf-facelift-v1.0.2/CNF_Facelift.jsfx)**
 
 It's one file with everything inside.
 [View the code](https://github.com/heavywateraudio/cnf-jsfx/blob/master/jsfx/CNF_Facelift.jsfx) on GitHub.
@@ -236,5 +240,5 @@ It's one file with everything inside.
 ## Credits
 
 - DSP: Andy Rx (Heavy Water Audio), v0.1.06, MIT License.
-- GUI: Andy Rx (Heavy Water Audio), v1.0, MIT License.
+- GUI: Andy Rx (Heavy Water Audio), v1.0.2, MIT License.
 - GUI made with [Facelift](https://github.com/heavywateraudio/facelift-jsfx).

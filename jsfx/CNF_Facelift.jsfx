@@ -2,13 +2,14 @@ desc:CNF Console Noise Floor
 // FACELIFT-CARD v1
 // DSP by Heavy Water Audio/Andy Rx, v.0.1.06
 // DSP license: MIT
-// GUI by Heavy Water Audio/Andy Rx, v 1.0, MIT
+// GUI by Heavy Water Audio/Andy Rx, v 1.0.2, MIT
 // serial [47bdb600]
 // 2026
-// contact: heavywateraudio.com
+// contact: andy@heavywateraudio.com
 // note:
-// made with Facelift v0.1.638
+// made with Facelift v0.1.700; Facelift code under the Facelift License: https://github.com/heavywateraudio
 // FACELIFT-CARD END
+
 // =============================================================================
 //version: 0.1.06
 //
@@ -200,54 +201,56 @@ runtime_drag_throw = 200;
 runtime_ox = 0;
 runtime_oy = 0;
 runtime_text_sign = 0;
+runtime_knob_off = 0;
 
 RUNTIME_SLOT_FACEPLATE_GRAD_TOP = 0;
-RUNTIME_SLOT_FACEPLATE_GRAD_BOTTOM = 12;
-RUNTIME_SLOT_FACEPLATE_LIGHT_EDGE = 321;
-RUNTIME_SLOT_FACEPLATE_DARK_EDGE = 333;
-RUNTIME_SLOT_BUTTON_FILL = 22;
-RUNTIME_SLOT_BUTTON_ACCENT = 34;
-RUNTIME_SLOT_BUTTON_TEXT = 46;
-RUNTIME_SLOT_BUTTON_FILL_ON = 58;
-RUNTIME_SLOT_BUTTON_ACCENT_ON = 70;
-RUNTIME_SLOT_BUTTON_TEXT_ON = 82;
-RUNTIME_SLOT_BUTTON_LIGHT_EDGE = 347;
-RUNTIME_SLOT_BUTTON_DARK_EDGE = 359;
-RUNTIME_SLOT_BUTTON_FILL_BUTTON_OFF_HOVER = 503;
-RUNTIME_SLOT_BUTTON_FILL_BUTTON_ON_HOVER = 515;
-RUNTIME_SLOT_KNOB_RING = 88;
-RUNTIME_SLOT_KNOB_HOVER = 100;
-RUNTIME_SLOT_KNOB_POINTER = 112;
-RUNTIME_SLOT_KNOB_LABEL_TEXT = 124;
-RUNTIME_SLOT_KNOB_INNER_RING = 290;
-RUNTIME_SLOT_KNOB_INNER_FILL = 302;
-RUNTIME_SLOT_KNOB_OUTER_FILL = 314;
-RUNTIME_SLOT_KNOB_LIGHT_EDGE = 370;
-RUNTIME_SLOT_KNOB_DARK_EDGE = 382;
-RUNTIME_SLOT_KNOB_NEGATIVE = 460;
-RUNTIME_SLOT_KNOB_POSITIVE = 472;
-RUNTIME_SLOT_LABEL_TEXT = 132;
-RUNTIME_SLOT_LABEL_TEXT_ON = 265;
-RUNTIME_SLOT_NUMBOX_FILL = 143;
-RUNTIME_SLOT_NUMBOX_ACCENT = 155;
-RUNTIME_SLOT_NUMBOX_TEXT = 167;
-RUNTIME_SLOT_NUMBOX_EDIT_FILL = 179;
-RUNTIME_SLOT_NUMBOX_EDIT_TEXT = 191;
-RUNTIME_SLOT_NUMBOX_LABEL_TEXT = 203;
-RUNTIME_SLOT_NUMBOX_LIGHT_EDGE = 391;
-RUNTIME_SLOT_NUMBOX_DARK_EDGE = 403;
-RUNTIME_SLOT_NUMBOX_NEGATIVE = 481;
-RUNTIME_SLOT_NUMBOX_POSITIVE = 493;
-RUNTIME_SLOT_METER_ZONE1 = 209;
-RUNTIME_SLOT_METER_ZONE2 = 221;
-RUNTIME_SLOT_METER_ZONE3 = 233;
-RUNTIME_SLOT_METER_OFF = 278;
-RUNTIME_SLOT_METER_LIGHT_EDGE = 411;
-RUNTIME_SLOT_METER_DARK_EDGE = 423;
-RUNTIME_SLOT_LED_ON = 242;
-RUNTIME_SLOT_LED_OFF = 254;
-RUNTIME_SLOT_LED_LIGHT_EDGE = 431;
-RUNTIME_SLOT_LED_DARK_EDGE = 443;
+RUNTIME_SLOT_FACEPLATE_GRAD_BOTTOM = 13;
+RUNTIME_SLOT_FACEPLATE_LIGHT_EDGE = 350;
+RUNTIME_SLOT_FACEPLATE_DARK_EDGE = 363;
+RUNTIME_SLOT_BUTTON_FILL = 24;
+RUNTIME_SLOT_BUTTON_ACCENT = 37;
+RUNTIME_SLOT_BUTTON_TEXT = 50;
+RUNTIME_SLOT_BUTTON_FILL_ON = 63;
+RUNTIME_SLOT_BUTTON_ACCENT_ON = 76;
+RUNTIME_SLOT_BUTTON_TEXT_ON = 89;
+RUNTIME_SLOT_BUTTON_LIGHT_EDGE = 378;
+RUNTIME_SLOT_BUTTON_DARK_EDGE = 391;
+RUNTIME_SLOT_BUTTON_FILL_BUTTON_OFF_HOVER = 548;
+RUNTIME_SLOT_BUTTON_FILL_BUTTON_ON_HOVER = 561;
+RUNTIME_SLOT_KNOB_RING = 96;
+RUNTIME_SLOT_KNOB_HOVER = 109;
+RUNTIME_SLOT_KNOB_POINTER = 122;
+RUNTIME_SLOT_KNOB_LABEL_TEXT = 135;
+RUNTIME_SLOT_KNOB_INNER_RING = 316;
+RUNTIME_SLOT_KNOB_INNER_FILL = 329;
+RUNTIME_SLOT_KNOB_OUTER_FILL = 342;
+RUNTIME_SLOT_KNOB_LIGHT_EDGE = 403;
+RUNTIME_SLOT_KNOB_DARK_EDGE = 416;
+RUNTIME_SLOT_KNOB_NEGATIVE = 501;
+RUNTIME_SLOT_KNOB_POSITIVE = 514;
+RUNTIME_SLOT_KNOB_OFF = 575;
+RUNTIME_SLOT_LABEL_TEXT = 144;
+RUNTIME_SLOT_LABEL_TEXT_ON = 289;
+RUNTIME_SLOT_NUMBOX_FILL = 156;
+RUNTIME_SLOT_NUMBOX_ACCENT = 169;
+RUNTIME_SLOT_NUMBOX_TEXT = 182;
+RUNTIME_SLOT_NUMBOX_EDIT_FILL = 195;
+RUNTIME_SLOT_NUMBOX_EDIT_TEXT = 208;
+RUNTIME_SLOT_NUMBOX_LABEL_TEXT = 221;
+RUNTIME_SLOT_NUMBOX_LIGHT_EDGE = 426;
+RUNTIME_SLOT_NUMBOX_DARK_EDGE = 439;
+RUNTIME_SLOT_NUMBOX_NEGATIVE = 524;
+RUNTIME_SLOT_NUMBOX_POSITIVE = 537;
+RUNTIME_SLOT_METER_ZONE1 = 228;
+RUNTIME_SLOT_METER_ZONE2 = 241;
+RUNTIME_SLOT_METER_ZONE3 = 254;
+RUNTIME_SLOT_METER_OFF = 303;
+RUNTIME_SLOT_METER_LIGHT_EDGE = 448;
+RUNTIME_SLOT_METER_DARK_EDGE = 461;
+RUNTIME_SLOT_LED_ON = 264;
+RUNTIME_SLOT_LED_OFF = 277;
+RUNTIME_SLOT_LED_LIGHT_EDGE = 470;
+RUNTIME_SLOT_LED_DARK_EDGE = 483;
 
 RUNTIME_STATE_IDLE = 0;
 RUNTIME_STATE_HOVER = 1;
@@ -576,9 +579,9 @@ function runtime_color_set(id, slot, a_r, a_g, a_b, a_a, b_r, b_g, b_b, b_a)
   local(palette_row, record_row, addr)
 (
   runtime_color_seed_private();
-  palette_row = floor(slot / 11);
-  record_row = slot - palette_row * 11;
-  addr = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 88 + record_row * 8;
+  palette_row = floor(slot / 12);
+  record_row = slot - palette_row * 12;
+  addr = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 96 + record_row * 8;
   addr[0] = a_r;
   addr[1] = a_g;
   addr[2] = a_b;
@@ -595,19 +598,19 @@ function runtime_color_apply(id, slot, t, state)
         factor, r, g, b, a)
 (
   runtime_color_seed_private();
-  palette_row = floor(slot / 11);
-  record_row = slot - palette_row * 11;
-  addr = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 88 + record_row * 8;
+  palette_row = floor(slot / 12);
+  record_row = slot - palette_row * 12;
+  addr = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 96 + record_row * 8;
 
-  palette_row >= 45 &&
+  palette_row >= 45 && palette_row <= 46 &&
   addr[0] == -1 && addr[1] == -1 && addr[2] == -1 && addr[3] == -1 &&
   addr[4] == -1 && addr[5] == -1 && addr[6] == -1 && addr[7] == -1 ? (
     palette_row == 45 ? (
       palette_row = 2;
-      addr = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 88;
+      addr = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 96;
     ) : (
       palette_row = 5;
-      addr = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 88 + 3 * 8;
+      addr = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 96 + 3 * 8;
     );
   );
   palette_row >= 41 && palette_row <= 44 &&
@@ -615,17 +618,17 @@ function runtime_color_apply(id, slot, t, state)
   addr[4] == -1 && addr[5] == -1 && addr[6] == -1 && addr[7] == -1 ? (
     palette_row <= 42 ? (
       palette_row = 11;
-      addr = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 88 + 3 * 8;
+      addr = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 96 + 3 * 8;
     ) : (
       palette_row = 15;
-      addr = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 88 + 2 * 8;
+      addr = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 96 + 2 * 8;
     );
   );
   palette_row == 11 &&
   addr[0] == -1 && addr[1] == -1 && addr[2] == -1 && addr[3] == -1 &&
   addr[4] == -1 && addr[5] == -1 && addr[6] == -1 && addr[7] == -1 ? (
     palette_row = 10;
-    addr = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 88 + 2 * 8;
+    addr = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 96 + 2 * 8;
   );
 
   addr[0] == -1 && addr[1] == -1 && addr[2] == -1 && addr[3] == -1 &&
@@ -670,9 +673,9 @@ function runtime_color_apply2(id, slot_a, slot_b, t, state)
 (
   runtime_color_seed_private();
 
-  palette_row_a = floor(slot_a / 11);
-  record_row_a = slot_a - palette_row_a * 11;
-  addr_a = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 88 + record_row_a * 8;
+  palette_row_a = floor(slot_a / 12);
+  record_row_a = slot_a - palette_row_a * 12;
+  addr_a = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 96 + record_row_a * 8;
 
   addr_a[0] == -1 && addr_a[1] == -1 && addr_a[2] == -1 && addr_a[3] == -1 &&
   addr_a[4] == -1 && addr_a[5] == -1 && addr_a[6] == -1 && addr_a[7] == -1 ? (
@@ -687,9 +690,9 @@ function runtime_color_apply2(id, slot_a, slot_b, t, state)
     a_a = addr_a[3];
   );
 
-  palette_row_b = floor(slot_b / 11);
-  record_row_b = slot_b - palette_row_b * 11;
-  addr_b = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 88 + record_row_b * 8;
+  palette_row_b = floor(slot_b / 12);
+  record_row_b = slot_b - palette_row_b * 12;
+  addr_b = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 96 + record_row_b * 8;
 
   addr_b[0] == -1 && addr_b[1] == -1 && addr_b[2] == -1 && addr_b[3] == -1 &&
   addr_b[4] == -1 && addr_b[5] == -1 && addr_b[6] == -1 && addr_b[7] == -1 ? (
@@ -855,12 +858,12 @@ function runtime_skirt_draw(id, kind, x, y, w, h, led_shape, show, width, gap, c
     ls = kind == 1 ? RUNTIME_SLOT_FACEPLATE_LIGHT_EDGE : kind == 2 ? RUNTIME_SLOT_BUTTON_LIGHT_EDGE : kind == 3 ? RUNTIME_SLOT_KNOB_LIGHT_EDGE : kind == 5 ? RUNTIME_SLOT_NUMBOX_LIGHT_EDGE : kind == 6 ? RUNTIME_SLOT_METER_LIGHT_EDGE : RUNTIME_SLOT_LED_LIGHT_EDGE;
     ds = kind == 1 ? RUNTIME_SLOT_FACEPLATE_DARK_EDGE : kind == 2 ? RUNTIME_SLOT_BUTTON_DARK_EDGE : kind == 3 ? RUNTIME_SLOT_KNOB_DARK_EDGE : kind == 5 ? RUNTIME_SLOT_NUMBOX_DARK_EDGE : kind == 6 ? RUNTIME_SLOT_METER_DARK_EDGE : RUNTIME_SLOT_LED_DARK_EDGE;
     runtime_color_seed_private();
-    slot = ls; row = floor(slot / 11); addr = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 88 + (slot - row * 11) * 8;
+    slot = ls; row = floor(slot / 12); addr = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 96 + (slot - row * 12) * 8;
     addr[0] == -1 && addr[1] == -1 && addr[2] == -1 && addr[3] == -1 && addr[4] == -1 && addr[5] == -1 && addr[6] == -1 && addr[7] == -1 ? (
       lr0 = runtime_color_default_private(row, 0); lg0 = runtime_color_default_private(row, 1); lb0 = runtime_color_default_private(row, 2); la0 = runtime_color_default_private(row, 3);
       lr1 = lr0; lg1 = lg0; lb1 = lb0; la1 = la0;
     ) : (lr0 = addr[0]; lg0 = addr[1]; lb0 = addr[2]; la0 = addr[3]; lr1 = addr[4]; lg1 = addr[5]; lb1 = addr[6]; la1 = addr[7];);
-    slot = ds; row = floor(slot / 11); addr = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 88 + (slot - row * 11) * 8;
+    slot = ds; row = floor(slot / 12); addr = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 96 + (slot - row * 12) * 8;
     addr[0] == -1 && addr[1] == -1 && addr[2] == -1 && addr[3] == -1 && addr[4] == -1 && addr[5] == -1 && addr[6] == -1 && addr[7] == -1 ? (
       dr0 = runtime_color_default_private(row, 0); dg0 = runtime_color_default_private(row, 1); db0 = runtime_color_default_private(row, 2); da0 = runtime_color_default_private(row, 3);
       dr1 = dr0; dg1 = dg0; db1 = db0; da1 = da0;
@@ -1448,7 +1451,7 @@ function runtime_knob_draw(id, x, y, w, h, ring_px, pointer_px, pointer_len, val
         hi0, hi1, hi2, hi3, homax, homin, himax, ba, px_x, px_e, s0, s1, s2,
         s3, cov, tw, th, s_ring, start_x, start_y, min_x, max_x, min_y, max_y,
         sample_x, sample_y, sample_i, sample_j, proj_u, proj_v, half_u, half_v, sx, m,
-        dot, r_end, eu)
+        dot, r_end, eu, off, oa, one, rf, e0, e1, e2, e3)
 (
   px = floor(runtime_x(x));
   py = floor(runtime_y(y));
@@ -1470,9 +1473,29 @@ function runtime_knob_draw(id, x, y, w, h, ring_px, pointer_px, pointer_len, val
     pl = floor(runtime_s(pointer_len));
     hw = floor(runtime_s(pointer_px)) * 0.5;
     f = min(max(frac, 0), 1);
-    s_ring = hover ? RUNTIME_SLOT_KNOB_HOVER : RUNTIME_SLOT_KNOB_RING;
+    runtime_color_seed_private();
+    oa = RUNTIME_ARENA_BASE + RUNTIME_COLOR_OFF + (id - 1) * 96 + 11 * 8;
+    off = runtime_knob_off != 0 &&
+          !(oa[0] == -1 && oa[1] == -1 && oa[2] == -1 && oa[3] == -1 &&
+            oa[4] == -1 && oa[5] == -1 && oa[6] == -1 && oa[7] == -1);
+    s_ring = off ? RUNTIME_SLOT_KNOB_OFF : (hover ? RUNTIME_SLOT_KNOB_HOVER : RUNTIME_SLOT_KNOB_RING);
 
-    (rt > 0 && r_outer >= 0) ? (
+    one = 0;
+    (show_outer_fill != 0 && r_inner >= 0 && r_outer > r_inner && r_outer > 0) ? (
+      runtime_color_apply(id, s_ring, 0, RUNTIME_STATE_IDLE);
+      e0 = gfx_r; e1 = gfx_g; e2 = gfx_b; e3 = gfx_a;
+      runtime_color_apply(id, off ? RUNTIME_SLOT_KNOB_OFF : RUNTIME_SLOT_KNOB_OUTER_FILL, 0, RUNTIME_STATE_IDLE);
+      one = gfx_r == e0 && gfx_g == e1 && gfx_b == e2 && gfx_a == e3;
+      one && !off ? (
+        runtime_color_apply(id, s_ring, 1, RUNTIME_STATE_IDLE);
+        one = gfx_r == e0 && gfx_g == e1 && gfx_b == e2 && gfx_a == e3;
+        runtime_color_apply(id, RUNTIME_SLOT_KNOB_OUTER_FILL, 1, RUNTIME_STATE_IDLE);
+        one = one && gfx_r == e0 && gfx_g == e1 && gfx_b == e2 && gfx_a == e3;
+      );
+    );
+    rf = one ? ro : r_outer;
+
+    (rt > 0 && r_outer >= 0 && !one) ? (
       row_start = floor(fill_cy - ro - 1);
       row_count = ceil(fill_cy + ro + 1) - row_start;
       row_i = 0;
@@ -1491,7 +1514,7 @@ function runtime_knob_draw(id, x, y, w, h, ring_px, pointer_px, pointer_len, val
             cov = min(ro, r + 0.5) - max(r_outer, r - 0.5);
             cov > 0 ? (
               t = (min(ro, max(r_outer, r)) - r_outer) / rt;
-              runtime_color_apply(id, s_ring, t, RUNTIME_STATE_IDLE);
+              runtime_color_apply(id, s_ring, off ? 0 : t, RUNTIME_STATE_IDLE);
               gfx_a *= min(1, cov);
               gfx_rect(sx, row_y, 1, 1);
             );
@@ -1503,26 +1526,26 @@ function runtime_knob_draw(id, x, y, w, h, ring_px, pointer_px, pointer_len, val
       );
     );
 
-    (show_outer_fill != 0 && r_inner >= 0 && r_outer > r_inner && r_outer > 0) ? (
-      row_start = floor(fill_cy - r_outer);
-      row_end = ceil(fill_cy + r_outer);
+    (show_outer_fill != 0 && r_inner >= 0 && rf > r_inner && rf > 0) ? (
+      row_start = floor(fill_cy - rf);
+      row_end = ceil(fill_cy + rf);
       row_count = row_end - row_start;
       row_i = 0;
       loop(row_count,
         row_y = row_start + row_i;
         t = row_count > 1 ? row_i / (row_count - 1) : 0;
-        runtime_color_apply(id, RUNTIME_SLOT_KNOB_OUTER_FILL, t, RUNTIME_STATE_IDLE);
+        runtime_color_apply(id, off ? RUNTIME_SLOT_KNOB_OFF : RUNTIME_SLOT_KNOB_OUTER_FILL, off ? 0 : t, RUNTIME_STATE_IDLE);
         sy = row_y + 0.125 - fill_cy;
-        ho0 = abs(sy) < r_outer ? sqrt(r_outer * r_outer - sy * sy) : 0;
+        ho0 = abs(sy) < rf ? sqrt(rf * rf - sy * sy) : 0;
         hi0 = abs(sy) < r_inner ? sqrt(r_inner * r_inner - sy * sy) : 0;
         sy = row_y + 0.375 - fill_cy;
-        ho1 = abs(sy) < r_outer ? sqrt(r_outer * r_outer - sy * sy) : 0;
+        ho1 = abs(sy) < rf ? sqrt(rf * rf - sy * sy) : 0;
         hi1 = abs(sy) < r_inner ? sqrt(r_inner * r_inner - sy * sy) : 0;
         sy = row_y + 0.625 - fill_cy;
-        ho2 = abs(sy) < r_outer ? sqrt(r_outer * r_outer - sy * sy) : 0;
+        ho2 = abs(sy) < rf ? sqrt(rf * rf - sy * sy) : 0;
         hi2 = abs(sy) < r_inner ? sqrt(r_inner * r_inner - sy * sy) : 0;
         sy = row_y + 0.875 - fill_cy;
-        ho3 = abs(sy) < r_outer ? sqrt(r_outer * r_outer - sy * sy) : 0;
+        ho3 = abs(sy) < rf ? sqrt(rf * rf - sy * sy) : 0;
         hi3 = abs(sy) < r_inner ? sqrt(r_inner * r_inner - sy * sy) : 0;
         homax = max(max(ho0, ho1), max(ho2, ho3));
         homin = min(min(ho0, ho1), min(ho2, ho3));
@@ -1738,6 +1761,7 @@ function runtime_knob_draw(id, x, y, w, h, ring_px, pointer_px, pointer_len, val
   );
   runtime_text_style(0, 0);
   runtime_text_sign = 0;
+  runtime_knob_off = 0;
 );
 
 function runtime_knob_colors_literal(ring_b_r, ring_b_g, ring_b_b, ring_b_a, hover_b_r, hover_b_g, hover_b_b, hover_b_a, inner_ring_a_r, inner_ring_a_g, inner_ring_a_b, inner_ring_a_a, inner_ring_b_r, inner_ring_b_g, inner_ring_b_b, inner_ring_b_a, inner_fill_a_r, inner_fill_a_g, inner_fill_a_b, inner_fill_a_a, inner_fill_b_r, inner_fill_b_g, inner_fill_b_b, inner_fill_b_a, outer_fill_a_r, outer_fill_a_g, outer_fill_a_b, outer_fill_a_a, outer_fill_b_r, outer_fill_b_g, outer_fill_b_b, outer_fill_b_a, pointer_dot, pointer_distance)
@@ -1787,7 +1811,7 @@ function runtime_knob_draw_literal(x, y, w, h, ring_px, pointer_px, pointer_len,
         hi0, hi1, hi2, hi3, homax, homin, himax, ba, px_x, px_e, s0, s1, s2,
         s3, cov, tw, th, rr, rg, rb, ra, start_x, start_y, min_x, max_x, min_y, max_y,
         sample_x, sample_y, sample_i, sample_j, proj_u, proj_v, half_u, half_v,
-        tr, tg, tb, ta, sx, m, dot, r_end, eu)
+        tr, tg, tb, ta, sx, m, dot, r_end, eu, one, rf)
 (
   px = floor(runtime_x(x));
   py = floor(runtime_y(y));
@@ -1814,8 +1838,14 @@ function runtime_knob_draw_literal(x, y, w, h, ring_px, pointer_px, pointer_len,
     rg = hover ? hover_g : ring_g;
     rb = hover ? hover_b : ring_b;
     ra = hover ? hover_a : ring_a;
+    one = show_outer_fill != 0 && r_inner >= 0 && r_outer > r_inner && r_outer > 0 &&
+          rr == tmp[24] && rg == tmp[25] && rb == tmp[26] && ra == tmp[27] &&
+          (hover ? tmp[4] : tmp[0]) == tmp[24] && (hover ? tmp[5] : tmp[1]) == tmp[25] &&
+          (hover ? tmp[6] : tmp[2]) == tmp[26] && (hover ? tmp[7] : tmp[3]) == tmp[27] &&
+          tmp[28] == tmp[24] && tmp[29] == tmp[25] && tmp[30] == tmp[26] && tmp[31] == tmp[27];
+    rf = one ? ro : r_outer;
 
-    (rt > 0 && r_outer >= 0) ? (
+    (rt > 0 && r_outer >= 0 && !one) ? (
       row_start = floor(fill_cy - ro - 1);
       row_count = ceil(fill_cy + ro + 1) - row_start;
       row_i = 0;
@@ -1849,9 +1879,9 @@ function runtime_knob_draw_literal(x, y, w, h, ring_px, pointer_px, pointer_len,
       );
     );
 
-    (show_outer_fill != 0 && r_inner >= 0 && r_outer > r_inner && r_outer > 0) ? (
-      row_start = floor(fill_cy - r_outer);
-      row_end = ceil(fill_cy + r_outer);
+    (show_outer_fill != 0 && r_inner >= 0 && rf > r_inner && rf > 0) ? (
+      row_start = floor(fill_cy - rf);
+      row_end = ceil(fill_cy + rf);
       row_count = row_end - row_start;
       row_i = 0;
       loop(row_count,
@@ -1861,16 +1891,16 @@ function runtime_knob_draw_literal(x, y, w, h, ring_px, pointer_px, pointer_len,
                               tmp[28], tmp[29], tmp[30], tmp[31],
                               t, RUNTIME_STATE_IDLE);
         sy = row_y + 0.125 - fill_cy;
-        ho0 = abs(sy) < r_outer ? sqrt(r_outer * r_outer - sy * sy) : 0;
+        ho0 = abs(sy) < rf ? sqrt(rf * rf - sy * sy) : 0;
         hi0 = abs(sy) < r_inner ? sqrt(r_inner * r_inner - sy * sy) : 0;
         sy = row_y + 0.375 - fill_cy;
-        ho1 = abs(sy) < r_outer ? sqrt(r_outer * r_outer - sy * sy) : 0;
+        ho1 = abs(sy) < rf ? sqrt(rf * rf - sy * sy) : 0;
         hi1 = abs(sy) < r_inner ? sqrt(r_inner * r_inner - sy * sy) : 0;
         sy = row_y + 0.625 - fill_cy;
-        ho2 = abs(sy) < r_outer ? sqrt(r_outer * r_outer - sy * sy) : 0;
+        ho2 = abs(sy) < rf ? sqrt(rf * rf - sy * sy) : 0;
         hi2 = abs(sy) < r_inner ? sqrt(r_inner * r_inner - sy * sy) : 0;
         sy = row_y + 0.875 - fill_cy;
-        ho3 = abs(sy) < r_outer ? sqrt(r_outer * r_outer - sy * sy) : 0;
+        ho3 = abs(sy) < rf ? sqrt(rf * rf - sy * sy) : 0;
         hi3 = abs(sy) < r_inner ? sqrt(r_inner * r_inner - sy * sy) : 0;
         homax = max(max(ho0, ho1), max(ho2, ho3));
         homin = min(min(ho0, ho1), min(ho2, ho3));
@@ -3632,7 +3662,7 @@ fl47bdb600_right_down = (mouse_cap & 2) && (fl47bdb600_last_mouse_cap & 2) == 0;
 fl47bdb600_fine = (mouse_cap & 4);
 fl47bdb600_fine_edge = (mouse_cap & 4) != (fl47bdb600_last_mouse_cap & 4);
 fl47bdb600_tri_scale > 0 ? runtime_set_scale(fl47bdb600_tri_scale);
-fl47bdb600_tri_hit = fl47bdb600_mx + fl47bdb600_my >= min(gfx_w, 734 * runtime_scale) + min(gfx_h, 386 * runtime_scale) - 20 - 1 && fl47bdb600_mx < min(gfx_w, 734 * runtime_scale) && fl47bdb600_my < min(gfx_h, 386 * runtime_scale);
+fl47bdb600_tri_hit = fl47bdb600_mx + fl47bdb600_my >= min(gfx_w, 734 * runtime_scale) + min(gfx_h, 386 * runtime_scale) - 25 - 1 && fl47bdb600_mx < min(gfx_w, 734 * runtime_scale) && fl47bdb600_my < min(gfx_h, 386 * runtime_scale);
 fl47bdb600_mouse_down && fl47bdb600_tri_hit ? (fl47bdb600_gfx_seen - fl47bdb600_tri_up_t <= 0.3 ? (fl47bdb600_tri_scale = 1; runtime_set_scale(1); fl47bdb600_tri_drag = 0; fl47bdb600_tri_up_t = 0;) : (fl47bdb600_tri_drag = 1; fl47bdb600_tri_ax = fl47bdb600_mx + fl47bdb600_my; fl47bdb600_tri_s0 = runtime_scale;); fl47bdb600_mouse_down = 0;);
 fl47bdb600_tri_drag && fl47bdb600_mouse_held && fl47bdb600_mx + fl47bdb600_my != fl47bdb600_tri_ax && fl47bdb600_tri_ax > 0 ? (fl47bdb600_tri_scale = max(0.5, min(3, fl47bdb600_tri_s0 * (fl47bdb600_mx + fl47bdb600_my) / fl47bdb600_tri_ax)); runtime_set_scale(fl47bdb600_tri_scale););
 fl47bdb600_tri_drag && fl47bdb600_mouse_up ? (fl47bdb600_tri_drag = 0; fl47bdb600_tri_up_t = fl47bdb600_gfx_seen;);
@@ -3641,12 +3671,12 @@ fl47bdb600_edit_entered = 0;
 fl47bdb600_key_ed = fl47bdb600_edit_owner;
 runtime_dim_set(1);
 fl47bdb600_mouse_down && fl47bdb600_edit_owner == 5 && fl47bdb600_show_when7 && !runtime_hit(fl47bdb600_mx, fl47bdb600_my, 116, 267, 55, 24) ? (fl47bdb600_edit_owner = 0; strcpy(#fl47bdb600_edit_buf, ""););
-fl47bdb600_show_when3 && fl47bdb600_mouse_down && RUNTIME_OWNER == 0 && fl47bdb600_edit_owner == 0 && runtime_hit(fl47bdb600_mx, fl47bdb600_my, 95, 101, 96, 96) ? RUNTIME_OWNER = 1;
-fl47bdb600_show_when4 && fl47bdb600_mouse_down && RUNTIME_OWNER == 0 && fl47bdb600_edit_owner == 0 && runtime_hit(fl47bdb600_mx, fl47bdb600_my, 329, 113, 96, 96) ? RUNTIME_OWNER = 2;
-fl47bdb600_mouse_down && RUNTIME_OWNER == 0 && fl47bdb600_edit_owner == 0 && runtime_hit(fl47bdb600_mx, fl47bdb600_my, 539, 60, 125, 44) ? RUNTIME_OWNER = 3;
-fl47bdb600_mouse_down && RUNTIME_OWNER == 0 && fl47bdb600_edit_owner == 0 && runtime_hit(fl47bdb600_mx, fl47bdb600_my, 540, 132, 125, 44) ? RUNTIME_OWNER = 4;
-fl47bdb600_show_when7 && fl47bdb600_mouse_down && RUNTIME_OWNER == 0 && fl47bdb600_edit_owner == 0 && runtime_hit(fl47bdb600_mx, fl47bdb600_my, 116, 267, 55, 24) ? RUNTIME_OWNER = 5;
 fl47bdb600_mouse_down && RUNTIME_OWNER == 0 && fl47bdb600_edit_owner == 0 && runtime_hit(fl47bdb600_mx, fl47bdb600_my, 540, 207, 125, 44) ? RUNTIME_OWNER = 6;
+fl47bdb600_show_when7 && fl47bdb600_mouse_down && RUNTIME_OWNER == 0 && fl47bdb600_edit_owner == 0 && runtime_hit(fl47bdb600_mx, fl47bdb600_my, 116, 267, 55, 24) ? RUNTIME_OWNER = 5;
+fl47bdb600_mouse_down && RUNTIME_OWNER == 0 && fl47bdb600_edit_owner == 0 && runtime_hit(fl47bdb600_mx, fl47bdb600_my, 540, 132, 125, 44) ? RUNTIME_OWNER = 4;
+fl47bdb600_mouse_down && RUNTIME_OWNER == 0 && fl47bdb600_edit_owner == 0 && runtime_hit(fl47bdb600_mx, fl47bdb600_my, 539, 60, 125, 44) ? RUNTIME_OWNER = 3;
+fl47bdb600_show_when4 && fl47bdb600_mouse_down && RUNTIME_OWNER == 0 && fl47bdb600_edit_owner == 0 && runtime_hit(fl47bdb600_mx, fl47bdb600_my, 329, 113, 96, 96) ? RUNTIME_OWNER = 2;
+fl47bdb600_show_when3 && fl47bdb600_mouse_down && RUNTIME_OWNER == 0 && fl47bdb600_edit_owner == 0 && runtime_hit(fl47bdb600_mx, fl47bdb600_my, 95, 101, 96, 96) ? RUNTIME_OWNER = 1;
 fl47bdb600_double_click = fl47bdb600_mouse_down && RUNTIME_OWNER != 0 && RUNTIME_OWNER == fl47bdb600_gesture_last_id && fl47bdb600_gesture_time - fl47bdb600_gesture_last_t < 0.300;
 fl47bdb600_show_when7 && fl47bdb600_double_click && RUNTIME_OWNER == 5 ? (fl47bdb600_edit_owner = 5; strcpy(#fl47bdb600_edit_buf, ""); RUNTIME_OWNER = 0; fl47bdb600_gesture_last_id = 0; fl47bdb600_gesture_last_t = -10; fl47bdb600_edit_entered = 1;);
 fl47bdb600_show_when3 && fl47bdb600_mouse_down && RUNTIME_OWNER == 1 ? (fl47bdb600_drag_anchor_y = fl47bdb600_my; fl47bdb600_drag_anchor_v = runtime_knob_get(1););
@@ -3666,8 +3696,8 @@ slider_automate(slider2); fl47bdb600_last_slider2 = slider2;
 fl47bdb600_slider_dirty = 1;
 );
 fl47bdb600_reset_id = 0;
-fl47bdb600_show_when3 && fl47bdb600_right_down && RUNTIME_OWNER == 0 && fl47bdb600_reset_id == 0 && runtime_hit(fl47bdb600_mx, fl47bdb600_my, 95, 101, 96, 96) ? fl47bdb600_reset_id = 1;
 fl47bdb600_show_when7 && fl47bdb600_right_down && RUNTIME_OWNER == 0 && fl47bdb600_reset_id == 0 && runtime_hit(fl47bdb600_mx, fl47bdb600_my, 116, 267, 55, 24) ? fl47bdb600_reset_id = 5;
+fl47bdb600_show_when3 && fl47bdb600_right_down && RUNTIME_OWNER == 0 && fl47bdb600_reset_id == 0 && runtime_hit(fl47bdb600_mx, fl47bdb600_my, 95, 101, 96, 96) ? fl47bdb600_reset_id = 1;
 fl47bdb600_reset_trigger = 0;
 fl47bdb600_show_when3 && fl47bdb600_reset_id == 1 ? fl47bdb600_reset_trigger = 1;
 fl47bdb600_show_when3 && fl47bdb600_double_click && RUNTIME_OWNER == 1 ? fl47bdb600_reset_trigger = 2;
@@ -6256,7 +6286,7 @@ runtime_ox = fl47bdb600_clip_x;
 runtime_oy = fl47bdb600_clip_y;
 );
 runtime_text_style(2, 2);
-runtime_label_draw_literal(439, 25, 61, 20, 14, "v. 1.0", 0.588235, 0.6, 0.568627, 1);
+runtime_label_draw_literal(439, 25, 61, 20, 14, "v. 1.0.2", 0.588235, 0.6, 0.568627, 1);
 fl47bdb600_clip_img_w ? (
 gfx_dest = -1;
 runtime_ox = 0;
@@ -6565,7 +6595,7 @@ gfx_y = fl47bdb600_clip_saved_y;
 gfx_setfont(fl47bdb600_clip_saved_font);
 // end ordinary parent paint
 gfx_mode = 0; gfx_r = 0.501961; gfx_g = 0.501961; gfx_b = 0.501961; gfx_a = 1;
-gfx_triangle(min(gfx_w, 734 * runtime_scale) - 20, min(gfx_h, 386 * runtime_scale) - 1, min(gfx_w, 734 * runtime_scale) - 1, min(gfx_h, 386 * runtime_scale) - 1, min(gfx_w, 734 * runtime_scale) - 1, min(gfx_h, 386 * runtime_scale) - 20);
+gfx_triangle(min(gfx_w, 734 * runtime_scale) - 25, min(gfx_h, 386 * runtime_scale) - 1, min(gfx_w, 734 * runtime_scale) - 1, min(gfx_h, 386 * runtime_scale) - 1, min(gfx_w, 734 * runtime_scale) - 1, min(gfx_h, 386 * runtime_scale) - 25);
 fl47bdb600_last_mouse_cap = mouse_cap;
 mouse_wheel = 0;
 );
